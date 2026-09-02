@@ -9,7 +9,6 @@ export class Cursor implements AfterViewInit {
   /* Cursor elements */
   private dot!: HTMLElement;
   private ring!: HTMLElement;
-  private orbit!: HTMLElement;
 
   constructor(
     private elementRef: ElementRef,
@@ -19,7 +18,6 @@ export class Cursor implements AfterViewInit {
   ngAfterViewInit(): void {
     this.dot = this.elementRef.nativeElement.querySelector('.cursor-dot');
     this.ring = this.elementRef.nativeElement.querySelector('.cursor-ring');
-    this.orbit = this.elementRef.nativeElement.querySelector('.cursor-orbit');
     this.initCursor();
   }
 
@@ -34,7 +32,6 @@ export class Cursor implements AfterViewInit {
       mouseX = event.clientX;
       mouseY = event.clientY;
       this.dot.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
-      this.orbit.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
     });
 
     const animate = () => {
@@ -52,10 +49,8 @@ export class Cursor implements AfterViewInit {
 
       if (interactive) {
         this.renderer.addClass(this.ring, 'cursor-active');
-        this.renderer.addClass(this.orbit, 'cursor-active');
       } else {
         this.renderer.removeClass(this.ring, 'cursor-active');
-        this.renderer.removeClass(this.orbit, 'cursor-active');
       }
     });
   }
