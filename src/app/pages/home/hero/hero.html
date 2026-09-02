@@ -1,131 +1,133 @@
-<!-- hero section starts -->
-<section class="relative flex min-h-screen items-center overflow-hidden px-6 pt-24 lg:px-10">
-  <div
-    class="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_70%_45%,rgba(139,92,246,0.14),transparent_30%),radial-gradient(circle_at_25%_70%,rgba(6,182,212,0.06),transparent_25%)]"
-  ></div>
-  <div
-    class="absolute inset-0 -z-10 opacity-[0.035] [background-image:linear-gradient(rgba(255,255,255,1)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,1)_1px,transparent_1px)] [background-size:70px_70px]"
-  ></div>
-  <div class="mx-auto grid w-full max-w-7xl items-center gap-12 lg:grid-cols-[1.05fr_.95fr]">
+<!-- hero section -->
+<section class="relative flex min-h-screen items-center overflow-hidden px-6 pb-16 pt-28 lg:px-10">
+  <!-- background glow -->
+  <div class="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(circle_at_72%_42%,rgba(139,92,246,0.16),transparent_27%),radial-gradient(circle_at_20%_75%,rgba(6,182,212,0.07),transparent_25%)]"></div>
+  <div class="pointer-events-none absolute inset-0 -z-10 opacity-[0.035] [background-image:linear-gradient(rgba(255,255,255,1)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,1)_1px,transparent_1px)] [background-size:70px_70px]"></div>
 
-    <!-- hero content  starts -->
-    <div class="hero-content">
-        
-      <!-- about me -->
-      <div class="mb-7 flex items-center gap-4">
-        <span class="relative flex h-3 w-3">
-          <span
-            class="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-60"
-          ></span>
-          <span
-            class="relative inline-flex h-3 w-3 rounded-full bg-emerald-400 shadow-[0_0_18px_rgba(52,211,153,.7)]"
-          ></span>
+  <div class="mx-auto grid w-full max-w-7xl items-center gap-14 lg:grid-cols-[1.08fr_.92fr]">
+    <!-- hero content -->
+    <div class="hero-content relative">
+      <!-- status -->
+      <div class="mb-7 inline-flex items-center gap-3 rounded-full border border-white/[0.07] bg-white/[0.025] px-4 py-2 backdrop-blur-xl">
+        <span class="relative flex h-2 w-2">
+          <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-60"></span>
+          <span class="relative h-2 w-2 rounded-full bg-emerald-400 shadow-[0_0_14px_rgba(52,211,153,.8)]"></span>
         </span>
-        <span class="text-xs font-medium uppercase tracking-[0.25em] text-neutral-500">
-          Open to building something great
+        <span class="text-[10px] font-medium uppercase tracking-[0.24em] text-neutral-400">
+          Open to building great things
+        </span>
+        <span class="hidden h-3 w-px bg-white/10 sm:block"></span>
+        <span class="hidden text-[10px] uppercase tracking-[0.2em] text-violet-400 sm:block">
+          2026
         </span>
       </div>
 
-      <p class="mb-4 font-display text-sm font-medium uppercase tracking-[0.3em] text-violet-400">
-        Full Stack Developer
-      </p>
-      <h1
-        class="max-w-4xl font-display text-[clamp(3.5rem,8vw,7.5rem)] font-semibold leading-[0.88] tracking-[-0.065em]"
-      >
+      <!-- role -->
+      <div class="mb-5 flex items-center gap-3">
+        <span class="h-px w-8 bg-violet-500"></span>
+        <p class="font-display text-xs font-medium uppercase tracking-[0.35em] text-violet-400">
+          Full Stack Developer
+        </p>
+      </div>
+
+      <!-- headline -->
+      <h1 class="max-w-5xl font-display text-[clamp(3.8rem,8vw,7.8rem)] font-semibold leading-[0.84] tracking-[-0.075em] text-white">
         Building
         <span class="hero-gradient block">digital</span>
         experiences<span class="text-violet-500">.</span>
       </h1>
 
+      <!-- intro -->
       <div class="mt-9 max-w-2xl">
-        <p class="text-lg leading-8 text-neutral-400 md:text-xl">
-          I turn ideas into
+        <p class="text-base leading-8 text-neutral-400 md:text-lg">
+          I design and engineer
           <span class="font-medium text-white">scalable digital products</span>
-          — from intuitive
+          where thoughtful interfaces meet powerful technology —
           <span class="text-violet-400">Angular</span>
-          interfaces to robust
+          on the frontend,
           <span class="text-cyan-400">Laravel</span>
-          backends.
+          behind the scenes.
         </p>
+      </div>
 
-        <!-- quote area -->
-        <div class="mt-7 border-l border-violet-500/40 pl-5">
-          <p class="font-display text-base italic leading-7 text-neutral-300 md:text-lg">
-            “The people who are crazy enough to think they can change the world are the ones who
-            do.”
-          </p>
-          <span class="mt-2 block text-xs uppercase tracking-[0.2em] text-violet-400">
-            — Steve Jobs
-          </span>
+      <!-- quote -->
+      <div class="group relative mt-7 max-w-xl overflow-hidden rounded-2xl border border-white/[0.07] bg-white/[0.025] p-5 backdrop-blur-xl transition duration-500 hover:border-violet-500/20 hover:bg-white/[0.04]">
+        <div class="absolute left-0 top-0 h-full w-px bg-gradient-to-b from-violet-500 via-violet-500/40 to-transparent"></div>
+        <div class="flex gap-4">
+          <span class="font-serif text-3xl leading-none text-violet-400/60">“</span>
+          <div>
+            <p class="font-display text-sm italic leading-6 text-neutral-300 md:text-base">
+              The people who are crazy enough to think they can change the world are the ones who do.
+            </p>
+            <div class="mt-3 flex items-center gap-3">
+              <span class="h-px w-5 bg-violet-500/50"></span>
+              <span class="text-[10px] uppercase tracking-[0.25em] text-violet-400">
+                Steve Jobs
+              </span>
+            </div>
+          </div>
         </div>
       </div>
 
-      <!-- actions buttons -->
-      <div class="mt-9 flex flex-wrap items-center gap-4">
-        <a
-          href="#projects"
-          data-cursor="button"
-          class="group flex items-center gap-3 rounded-full bg-white px-6 py-3.5 text-sm font-semibold text-black transition duration-300 hover:-translate-y-1 hover:bg-violet-500 hover:text-white hover:shadow-[0_15px_40px_rgba(139,92,246,.25)]"
-        >
-          View Projects
-          <span class="transition duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
-            >↗</span
-          >
+      <!-- actions -->
+      <div class="mt-8 flex flex-wrap items-center gap-3">
+        <a href="#projects" data-cursor="button" class="group flex items-center gap-4 rounded-full bg-white px-6 py-3.5 text-sm font-semibold text-black transition duration-500 hover:-translate-y-1 hover:bg-violet-500 hover:text-white hover:shadow-[0_20px_50px_rgba(139,92,246,.25)]">
+          <span>Explore My Work</span>
+          <span class="flex h-6 w-6 items-center justify-center rounded-full bg-black/10 transition duration-500 group-hover:rotate-45 group-hover:bg-white/10">
+            ↗
+          </span>
         </a>
-        <a
-          href="#contact"
-          data-cursor="button"
-          class="group flex items-center gap-3 rounded-full border border-white/10 px-6 py-3.5 text-sm font-medium text-neutral-300 transition duration-300 hover:-translate-y-1 hover:border-white/30 hover:text-white"
-        >
-          Let's Connect
-          <span class="text-violet-400 transition duration-300 group-hover:translate-x-1">→</span>
+        <a href="#contact" data-cursor="button" class="group flex items-center gap-3 rounded-full border border-white/10 bg-white/[0.02] px-6 py-3.5 text-sm font-medium text-neutral-300 transition duration-500 hover:-translate-y-1 hover:border-violet-400/30 hover:bg-violet-500/5 hover:text-white">
+          <span>Let's Connect</span>
+          <span class="text-violet-400 transition duration-500 group-hover:translate-x-1">
+            →
+          </span>
         </a>
       </div>
 
-      <!-- technologies sections -->
-      <div class="mt-12 flex flex-wrap items-center gap-5 text-xs uppercase tracking-[0.2em]">
-        <span class="text-red-400">Laravel</span>
-        <span class="h-px w-7 bg-neutral-800"></span>
-        <span class="text-violet-400">Angular</span>
-        <span class="h-px w-7 bg-neutral-800"></span>
-        <span class="text-cyan-400">Javascript</span>
-        <span class="h-px w-7 bg-neutral-800"></span>
-        <span class="text-neutral-300">Full Stack</span>
+      <!-- tech stack -->
+      <div class="mt-10 flex flex-wrap items-center gap-2">
+        <span class="mr-2 text-[9px] uppercase tracking-[0.25em] text-neutral-600">Stack</span>
+        <span class="rounded-full border border-red-400/10 bg-red-400/5 px-3 py-1.5 text-[10px] uppercase tracking-[0.15em] text-red-400">Laravel</span>
+        <span class="rounded-full border border-violet-400/10 bg-violet-400/5 px-3 py-1.5 text-[10px] uppercase tracking-[0.15em] text-violet-400">Angular</span>
+        <span class="rounded-full border border-cyan-400/10 bg-cyan-400/5 px-3 py-1.5 text-[10px] uppercase tracking-[0.15em] text-cyan-400">TypeScript</span>
+        <span class="rounded-full border border-white/10 bg-white/[0.03] px-3 py-1.5 text-[10px] uppercase tracking-[0.15em] text-neutral-400">REST API</span>
       </div>
     </div>
 
-    <div class="hero-visual relative mx-auto h-[380px] w-full max-w-[500px] lg:h-[560px]">
-      <div
-        class="absolute left-1/2 top-1/2 h-64 w-64 -translate-x-1/2 -translate-y-1/2 rounded-full bg-violet-600/10 blur-[90px]"
-      ></div>
-      <div
-        class="hero-ring absolute left-1/2 top-1/2 h-72 w-72 -translate-x-1/2 -translate-y-1/2 rounded-full border border-violet-500/20 sm:h-96 sm:w-96"
-      ></div>
-      <div
-        class="hero-ring hero-ring-delay absolute left-1/2 top-1/2 h-80 w-80 -translate-x-1/2 -translate-y-1/2 rounded-full border border-cyan-400/10 sm:h-[28rem] sm:w-[28rem]"
-      ></div>
-      <div
-        class="hero-orb absolute left-1/2 top-1/2 h-52 w-52 -translate-x-1/2 -translate-y-1/2 rounded-[35%] border border-white/10 bg-gradient-to-br from-violet-500/20 via-black to-cyan-500/10 shadow-[0_0_100px_rgba(139,92,246,.15)] backdrop-blur-xl sm:h-64 sm:w-64"
-      ></div>
-      <div
-        class="hero-card absolute left-1/2 top-1/2 w-56 -translate-x-1/2 -translate-y-1/2 rounded-2xl border border-white/10 bg-black/60 p-5 shadow-2xl backdrop-blur-xl sm:w-64"
-      >
-        <div class="mb-7 flex items-center justify-between">
-          <div
-            class="h-9 w-9 rounded-xl bg-gradient-to-br from-violet-500 to-cyan-400 shadow-[0_0_25px_rgba(139,92,246,.3)]"
-          ></div>
-          <span class="font-mono text-xs text-neutral-600">DEV_01</span>
+    <!-- hero visual -->
+    <div class="hero-visual relative mx-auto h-[420px] w-full max-w-[540px] lg:h-[590px]">
+      <!-- ambient glow -->
+      <div class="absolute left-1/2 top-1/2 h-72 w-72 -translate-x-1/2 -translate-y-1/2 rounded-full bg-violet-600/10 blur-[110px]"></div>
+
+      <!-- static rings -->
+      <div class="absolute left-1/2 top-1/2 h-72 w-72 -translate-x-1/2 -translate-y-1/2 rounded-full border border-violet-500/20 sm:h-[25rem] sm:w-[25rem]"></div>
+      <div class="absolute left-1/2 top-1/2 h-80 w-80 -translate-x-1/2 -translate-y-1/2 rounded-full border border-cyan-400/10 sm:h-[29rem] sm:w-[29rem]"></div>
+
+      <!-- center glow -->
+      <div class="absolute left-1/2 top-1/2 h-56 w-56 -translate-x-1/2 -translate-y-1/2 rounded-full bg-gradient-to-br from-violet-500/10 via-transparent to-cyan-500/10 blur-2xl"></div>
+
+      <!-- code card -->
+      <div class="hero-card absolute left-1/2 top-1/2 w-[270px] -translate-x-1/2 -translate-y-1/2 rotate-[-5deg] overflow-hidden rounded-3xl border border-white/10 bg-black/75 p-5 shadow-[0_30px_100px_rgba(0,0,0,.7)] backdrop-blur-2xl transition duration-700 hover:rotate-0 hover:scale-[1.03] sm:w-[310px]">
+        <!-- card header -->
+        <div class="mb-8 flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <span class="h-2 w-2 rounded-full bg-red-400"></span>
+            <span class="h-2 w-2 rounded-full bg-yellow-400"></span>
+            <span class="h-2 w-2 rounded-full bg-emerald-400"></span>
+          </div>
+          <span class="font-mono text-[9px] tracking-[0.2em] text-neutral-600">DEV_01</span>
         </div>
 
-        <!-- code preview section -->
-        <div class="space-y-3 font-mono text-xs">
+        <!-- code preview -->
+        <div class="space-y-3 font-mono text-[10px] leading-relaxed sm:text-xs">
           <div>
             <span class="text-violet-400">const</span>
             <span class="text-white"> developer</span> =
           </div>
-          <div class="pl-4 text-neutral-500">&#123;</div>
+          <div class="pl-4 text-neutral-600">&#123;</div>
           <div class="pl-8">
-            <span class="text-cyan-400">stack</span>:
+            <span class="text-cyan-400">role</span>:
             <span class="text-neutral-300">'Full Stack'</span>,
           </div>
           <div class="pl-8">
@@ -134,25 +136,51 @@
           </div>
           <div class="pl-8">
             <span class="text-cyan-400">backend</span>:
-            <span class="text-neutral-300">'Laravel'</span>
+            <span class="text-neutral-300">'Laravel'</span>,
           </div>
-          <div class="pl-4 text-neutral-500">&#125;;</div>
+          <div class="pl-8">
+            <span class="text-cyan-400">mindset</span>:
+            <span class="text-emerald-400">'Build'</span>
+          </div>
+          <div class="pl-4 text-neutral-600">&#125;;</div>
         </div>
 
-        <!-- hero card footer -->
-        <div class="mt-7 flex items-center justify-between border-t border-white/5 pt-4">
-          <span class="text-xs text-neutral-500">Building the web</span>
-          <span class="h-1.5 w-1.5 animate-pulse rounded-full bg-emerald-400"></span>
+        <!-- card footer -->
+        <div class="mt-8 flex items-center justify-between border-t border-white/[0.06] pt-4">
+          <span class="text-[9px] uppercase tracking-[0.18em] text-neutral-600">
+            Building the web
+          </span>
+          <span class="flex items-center gap-2 text-[9px] text-emerald-400">
+            <span class="h-1.5 w-1.5 rounded-full bg-emerald-400 shadow-[0_0_10px_rgba(52,211,153,.8)]"></span>
+            Online
+          </span>
         </div>
+      </div>
+
+      <!-- floating stack badge -->
+      <!-- <div class="absolute left-0 top-[18%] hidden rounded-2xl border border-white/[0.08] bg-black/60 px-4 py-3 shadow-2xl backdrop-blur-xl sm:block">
+        <p class="text-[8px] uppercase tracking-[0.2em] text-neutral-600">Frontend</p>
+        <p class="mt-1 text-xs font-medium text-violet-400">Angular</p>
+      </div> -->
+
+      <!-- floating api badge -->
+      <!-- <div class="absolute bottom-[19%] right-0 hidden rounded-2xl border border-white/[0.08] bg-black/60 px-4 py-3 shadow-2xl backdrop-blur-xl sm:block">
+        <p class="text-[8px] uppercase tracking-[0.2em] text-neutral-600">Backend</p>
+        <p class="mt-1 text-xs font-medium text-cyan-400">Laravel API</p>
+      </div> -->
+
+      <!-- visual label -->
+      <div class="absolute bottom-4 left-1/2 -translate-x-1/2 text-center">
+        <p class="text-[9px] uppercase tracking-[0.35em] text-neutral-700">
+          Design · Code · Deploy
+        </p>
       </div>
     </div>
   </div>
 
   <!-- scroll indicator -->
-  <div
-    class="absolute bottom-8 left-1/2 hidden -translate-x-1/2 flex-col items-center gap-3 md:flex"
-  >
-    <span class="text-[10px] uppercase tracking-[0.3em] text-neutral-600">Scroll</span>
-    <span class="h-10 w-px bg-gradient-to-b from-violet-500 to-transparent"></span>
+  <div class="absolute bottom-7 left-1/2 hidden -translate-x-1/2 flex-col items-center gap-2 md:flex">
+    <span class="text-[8px] uppercase tracking-[0.4em] text-neutral-700">Scroll</span>
+    <span class="h-8 w-px bg-gradient-to-b from-violet-500/70 to-transparent"></span>
   </div>
 </section>
