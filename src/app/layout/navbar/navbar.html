@@ -1,1 +1,33 @@
-<p>navbar works!</p>
+<!-- Animated navbar -->
+<nav class="navbar fixed top-0 left-0 z-40 w-full border-b border-white/5 bg-black/40 backdrop-blur-xl">
+    <div class="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 lg:px-10">
+    <a routerLink="/" class="nav-logo font-display text-2xl font-bold tracking-tighter">
+      G<span>.</span>
+    </a>
+
+    <!-- navbar items -->
+    <div class="hidden items-center gap-2 md:flex">
+      <a href="#about" class="nav-link" data-cursor="link">
+        <span>About</span>
+      </a>
+      <a href="#skills" class="nav-link" data-cursor="link">
+        <span>Skills</span>
+      </a>
+      <a href="#projects" class="nav-link" data-cursor="link">
+        <span>Projects</span>
+      </a>
+      <a href="#contact" class="nav-link" data-cursor="link">
+        <span>Contact</span>
+      </a>
+    </div>
+    <a href="#contact" class="talk-button" data-cursor="button">
+      <span>Let's Talk</span>
+      <span class="button-arrow">↗</span>
+    </a>
+    <button class="mobile-menu" data-cursor="button" aria-label="Open menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</nav>
