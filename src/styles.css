@@ -1,4 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
 @import "tailwindcss";
+
+@theme {
+  --color-background: #050505;
+  --color-surface: #0b0b0b;
+  --color-border: #1a1a1a;
+  --color-primary: #8b5cf6;
+  --color-secondary: #06b6d4;
+  --color-muted: #737373;
+  --font-sans: "DM Sans", sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+}
 
 html {
   scroll-behavior: smooth;
@@ -8,5 +20,40 @@ body {
   margin: 0;
   background: #050505;
   color: white;
-  font-family: Inter, sans-serif;
+  font-family: "DM Sans", sans-serif;
+  overflow-x: hidden;
+  cursor: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a,
+button {
+  cursor: none;
+}
+
+::selection {
+  background: #8b5cf6;
+  color: white;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 999px;
+}
+
+/* Display font */
+.font-display {
+  font-family: "Space Grotesk", sans-serif;
 }
