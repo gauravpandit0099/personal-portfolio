@@ -1,12 +1,30 @@
-/* Experience entrance animation */
-.experience-item {
-  animation: experience-in 0.7s ease-out forwards;
+/* Experience reveal */
+.experience-entry {
+  opacity: 0;
+  transform: translateY(45px);
+  animation: experienceReveal 0.9s cubic-bezier(.22, 1, .36, 1) forwards;
 }
 
-@keyframes experience-in {
+/* Timeline beam */
+.experience-beam {
+  animation: timelineBeam 4s cubic-bezier(.45, 0, .55, 1) infinite;
+}
+
+/* Technology reveal */
+.experience-entry .experience-tech {
+  opacity: .65;
+  transform: translateY(4px);
+}
+
+.experience-entry:hover .experience-tech {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes experienceReveal {
   from {
     opacity: 0;
-    transform: translateY(18px);
+    transform: translateY(45px);
   }
 
   to {
@@ -15,10 +33,28 @@
   }
 }
 
-/* Respect reduced-motion preferences */
+@keyframes timelineBeam {
+  0% {
+    transform: translateY(-140px);
+  }
+
+  50% {
+    transform: translateY(500px);
+  }
+
+  100% {
+    transform: translateY(900px);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
-  .experience-item {
-    animation: none;
+  .experience-entry {
     opacity: 1;
+    transform: none;
+    animation: none;
+  }
+
+  .experience-beam {
+    animation: none;
   }
 }
