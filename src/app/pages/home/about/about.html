@@ -1,1 +1,315 @@
-<p>about works!</p>
+<!-- About section -->
+<section
+  id="about"
+  class="relative overflow-hidden bg-black px-6 py-28 lg:px-10 lg:py-36"
+>
+  <!-- Background glow -->
+  <div
+    class="pointer-events-none absolute inset-0 -z-10
+      bg-[radial-gradient(circle_at_15%_35%,rgba(139,92,246,0.09),transparent_28%),radial-gradient(circle_at_85%_70%,rgba(6,182,212,0.05),transparent_25%)]"
+  ></div>
+
+  <!-- Subtle grid -->
+  <div
+    class="pointer-events-none absolute inset-0 -z-10 opacity-[0.025]
+      [background-image:linear-gradient(rgba(255,255,255,1)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,1)_1px,transparent_1px)]
+      [background-size:70px_70px]"
+  ></div>
+
+  <div class="mx-auto max-w-7xl">
+
+    <!-- Section heading -->
+    <div
+      class="mb-16 grid gap-8 lg:grid-cols-[1fr_auto] lg:items-end"
+    >
+
+      <!-- Heading -->
+      <div>
+        <div class="mb-5 flex items-center gap-3">
+          <span class="h-px w-8 bg-violet-500"></span>
+
+          <p
+            class="font-mono text-[11px] uppercase tracking-[0.3em] text-violet-400"
+          >
+            01 / About me
+          </p>
+        </div>
+
+        <h2
+          class="max-w-3xl font-display text-5xl font-semibold leading-[0.95] tracking-[-0.05em] text-white md:text-7xl lg:text-8xl"
+        >
+          More than
+          <span class="hero-gradient block">
+            just code.
+          </span>
+        </h2>
+      </div>
+
+      <!-- Supporting statement -->
+      <div class="max-w-md lg:pb-2">
+        <p
+          class="text-sm leading-7 text-neutral-500 md:text-base"
+        >
+          I believe great software sits where
+          <span class="text-neutral-300">engineering</span>,
+          <span class="text-neutral-300">design</span>
+          and
+          <span class="text-neutral-300">human experience</span>
+          come together.
+        </p>
+      </div>
+    </div>
+
+
+    <!-- Main about grid -->
+    <div class="grid gap-6 lg:grid-cols-[1.15fr_.85fr]">
+
+      <!-- Introduction card -->
+      <div
+        class="group relative overflow-hidden rounded-[2rem] border border-white/10
+          bg-white/[0.025] p-7 transition duration-500
+          hover:border-violet-500/20 md:p-10"
+      >
+
+        <!-- Card glow -->
+        <div
+          class="pointer-events-none absolute -right-24 -top-24 h-72 w-72
+            rounded-full bg-violet-500/[0.07] blur-[90px]
+            transition duration-700 group-hover:bg-violet-500/[0.14]"
+        ></div>
+
+        <div class="relative">
+
+          <!-- Card header -->
+          <div class="mb-12 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+
+              <span
+                class="flex h-8 w-8 items-center justify-center rounded-full
+                  border border-violet-500/20 bg-violet-500/[0.06]
+                  font-mono text-[10px] text-violet-400"
+              >
+                01
+              </span>
+
+              <span
+                class="font-mono text-[10px] uppercase tracking-[0.2em] text-neutral-500"
+              >
+                Who I am
+              </span>
+
+            </div>
+
+            <span
+              class="font-mono text-[10px] tracking-widest text-neutral-700"
+            >
+              GAURAV_01
+            </span>
+          </div>
+
+
+          <!-- Main introduction -->
+          <p
+            class="max-w-3xl text-2xl font-light leading-[1.4] text-neutral-300
+              md:text-4xl"
+          >
+            I'm a
+            <span class="font-medium text-white">
+              Full Stack Developer
+            </span>
+            who enjoys turning ideas into
+            <span class="hero-gradient font-medium">
+              real products.
+            </span>
+          </p>
+
+
+          <!-- Description -->
+          <p
+            class="mt-8 max-w-2xl text-sm leading-7 text-neutral-500 md:text-base"
+          >
+            I build modern web applications with
+            <span class="text-violet-400">Angular</span>
+            and
+            <span class="text-red-400">Laravel</span>,
+            combining scalable backend architecture with interfaces that
+            feel fast, intuitive and purposeful.
+          </p>
+
+
+          <!-- Technology list -->
+          <div class="mt-10">
+
+            <p
+              class="mb-4 font-mono text-[10px] uppercase tracking-[0.25em] text-neutral-700"
+            >
+              Core stack
+            </p>
+
+            <div class="flex flex-wrap gap-2.5">
+
+              @for (technology of technologies; track technology.name) {
+
+                <span
+                  class="rounded-full border border-white/10 bg-white/[0.025]
+                    px-4 py-2 text-xs transition duration-300
+                    hover:-translate-y-1 hover:border-white/20
+                    hover:bg-white/[0.06]"
+                  [class]="technology.color"
+                >
+                  {{ technology.name }}
+                </span>
+
+              }
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- Stats card -->
+      <div
+        class="group relative overflow-hidden rounded-[2rem] border border-white/10
+          bg-gradient-to-br from-violet-500/[0.07] via-white/[0.015] to-transparent
+          p-7 md:p-10"
+      >
+
+        <!-- Decorative glow -->
+        <div
+          class="pointer-events-none absolute -bottom-32 -right-32 h-64 w-64
+            rounded-full bg-cyan-500/[0.05] blur-[80px]"
+        ></div>
+
+        <div class="relative">
+
+          <!-- Card heading -->
+          <div class="mb-12 flex items-center justify-between">
+            <p
+              class="font-mono text-[10px] uppercase tracking-[0.25em] text-neutral-600"
+            >
+              A few numbers
+            </p>
+
+            <span class="text-xs text-neutral-700">
+              / 02
+            </span>
+          </div>
+
+
+          <!-- Statistics -->
+          <div class="space-y-2">
+
+            @for (stat of stats; track stat.label) {
+
+              <div
+                class="group/stat flex items-end justify-between
+                  border-b border-white/5 py-6 first:pt-0 last:border-b-0"
+              >
+
+                <span
+                  class="text-sm text-neutral-500 transition duration-300
+                    group-hover/stat:text-neutral-300"
+                >
+                  {{ stat.label }}
+                </span>
+
+                <span
+                  class="font-display text-5xl font-semibold tracking-[-0.04em]
+                    text-white transition duration-300
+                    group-hover/stat:text-violet-400 md:text-6xl"
+                >
+                  {{ stat.value }}
+                </span>
+
+              </div>
+
+            }
+
+          </div>
+
+
+          <!-- Small statement -->
+          <div class="mt-8 border-t border-white/5 pt-6">
+
+            <p
+              class="text-xs leading-6 text-neutral-600"
+            >
+              Focused on building software that is
+              <span class="text-neutral-400">
+                useful, scalable and built to last.
+              </span>
+            </p>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- Qualities -->
+    <div class="mt-6 grid gap-6 md:grid-cols-3">
+
+      @for (quality of qualities; track quality.number) {
+
+        <div
+          class="group relative overflow-hidden rounded-[2rem]
+            border border-white/10 bg-white/[0.02] p-7
+            transition duration-500
+            hover:-translate-y-2
+            hover:border-violet-500/25
+            hover:bg-white/[0.04]"
+        >
+
+          <!-- Number and indicator -->
+          <div class="mb-16 flex items-center justify-between">
+
+            <span
+              class="font-mono text-xs tracking-widest text-violet-400"
+            >
+              {{ quality.number }}
+            </span>
+
+            <span
+              class="h-1.5 w-1.5 rounded-full bg-white/20
+                transition duration-500
+                group-hover:bg-violet-400
+                group-hover:shadow-[0_0_15px_rgba(139,92,246,.8)]"
+            ></span>
+
+          </div>
+
+
+          <!-- Quality content -->
+          <h3
+            class="text-xl font-medium tracking-tight text-white"
+          >
+            {{ quality.title }}
+          </h3>
+
+          <p
+            class="mt-3 max-w-sm text-sm leading-6 text-neutral-500"
+          >
+            {{ quality.description }}
+          </p>
+
+
+          <!-- Hover line -->
+          <div
+            class="mt-8 h-px w-0 bg-violet-500
+              transition-all duration-500
+              group-hover:w-full"
+          ></div>
+
+        </div>
+
+      }
+
+    </div>
+
+  </div>
+</section>
