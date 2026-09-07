@@ -1,0 +1,43 @@
+/* Slider */
+.project-track {
+  width: 100%;
+}
+
+/* Card animation */
+.project-card {
+  animation: projectIn .6s ease both;
+}
+
+@keyframes projectIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive slider width */
+@media (max-width: 1023px) {
+  .project-card {
+    width: calc(50% - 8px);
+    min-width: calc(50% - 8px);
+  }
+}
+
+@media (max-width: 767px) {
+  .project-card {
+    width: 100%;
+    min-width: 100%;
+  }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .project-card {
+    animation: none;
+  }
+}
