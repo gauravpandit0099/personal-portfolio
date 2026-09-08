@@ -1,75 +1,81 @@
-<!-- floating navbar -->
-<nav class="fixed left-1/2 top-5 z-50 w-[calc(100%-2rem)] max-w-6xl -translate-x-1/2">
-  <div class="group relative rounded-2xl border border-white/[0.08] bg-black/50 p-1.5 shadow-[0_20px_60px_rgba(0,0,0,.35)] backdrop-blur-2xl transition duration-500 hover:border-white/[0.14]">
-    <!-- navbar glow -->
-    <div class="pointer-events-none absolute inset-0 rounded-2xl bg-gradient-to-r from-violet-500/[0.04] via-transparent to-cyan-400/[0.04]"></div>
+<!-- Floating navigation -->
+<nav class="fixed left-1/2 top-5 z-50 -translate-x-1/2">
+  <div class="flex items-center gap-2">
+    <!-- Logo island -->
+    <a
+      routerLink="/"
+      data-cursor="button"
+      class="group flex h-12 items-center gap-2 rounded-2xl border border-white/[.08] bg-black/60 px-3 shadow-[0_12px_40px_rgba(0,0,0,.35)] backdrop-blur-xl transition duration-500 hover:border-violet-400/25"
+    >
+      <span
+        class="flex h-8 w-8 items-center justify-center rounded-xl border border-white/10 bg-white/[.04] font-display text-sm font-bold text-white transition duration-500 group-hover:border-violet-400/30 group-hover:bg-violet-500/10"
+      >
+        G<span class="text-violet-400">.</span>
+      </span>
 
-    <div class="relative flex h-14 items-center justify-between px-2 sm:px-3">
-      <!-- logo -->
-      <a routerLink="/" data-cursor="button" class="group/logo flex items-center gap-3 rounded-xl px-3 py-2 transition duration-300">
-        <span class="relative flex h-8 w-8 items-center justify-center rounded-lg border border-white/10 bg-white/[0.04] font-display text-sm font-bold text-white shadow-inner transition duration-500 group-hover/logo:border-violet-400/30 group-hover/logo:bg-violet-500/10">
-          G<span class="text-violet-500">.</span>
-        </span>
-        <span class="hidden text-[9px] font-medium uppercase tracking-[0.28em] text-neutral-500 sm:block">
-          Gaurav
-        </span>
+      <span
+        class="hidden pr-1 font-mono text-[9px] uppercase tracking-[.25em] text-neutral-500 sm:block"
+      >
+        Gaurav
+      </span>
+    </a>
+
+    <!-- Navigation island -->
+    <div
+      class="hidden h-12 items-center rounded-2xl border border-white/[.08] bg-black/55 px-1.5 shadow-[0_12px_40px_rgba(0,0,0,.3)] backdrop-blur-xl md:flex"
+    >
+      <a href="#about" data-cursor="link" class="nav-link group">
+        <span>About</span>
       </a>
 
-      <!-- navigation -->
-      <div class="absolute left-1/2 hidden -translate-x-1/2 items-center md:flex">
-        <div class="flex items-center gap-1">
-          <a href="#about" data-cursor="link" class="nav-item group relative px-4 py-2.5">
-            <span class="relative z-10 text-[11px] font-medium text-neutral-500 transition duration-300 group-hover:text-white">
-              About
-            </span>
-            <span class="absolute inset-0 scale-75 rounded-xl bg-white/[0.05] opacity-0 transition duration-300 group-hover:scale-100 group-hover:opacity-100"></span>
-            <span class="absolute bottom-1 left-1/2 h-0.5 w-0 -translate-x-1/2 rounded-full bg-violet-400 transition-all duration-300 group-hover:w-1"></span>
-          </a>
-
-          <a href="#skills" data-cursor="link" class="nav-item group relative px-4 py-2.5">
-            <span class="relative z-10 text-[11px] font-medium text-neutral-500 transition duration-300 group-hover:text-white">
-              Skills
-            </span>
-            <span class="absolute inset-0 scale-75 rounded-xl bg-white/[0.05] opacity-0 transition duration-300 group-hover:scale-100 group-hover:opacity-100"></span>
-            <span class="absolute bottom-1 left-1/2 h-0.5 w-0 -translate-x-1/2 rounded-full bg-violet-400 transition-all duration-300 group-hover:w-1"></span>
-          </a>
-
-          <a href="#projects" data-cursor="link" class="nav-item group relative px-4 py-2.5">
-            <span class="relative z-10 text-[11px] font-medium text-neutral-500 transition duration-300 group-hover:text-white">
-              Projects
-            </span>
-            <span class="absolute inset-0 scale-75 rounded-xl bg-white/[0.05] opacity-0 transition duration-300 group-hover:scale-100 group-hover:opacity-100"></span>
-            <span class="absolute bottom-1 left-1/2 h-0.5 w-0 -translate-x-1/2 rounded-full bg-violet-400 transition-all duration-300 group-hover:w-1"></span>
-          </a>
-
-          <a href="#contact" data-cursor="link" class="nav-item group relative px-4 py-2.5">
-            <span class="relative z-10 text-[11px] font-medium text-neutral-500 transition duration-300 group-hover:text-white">
-              Contact
-            </span>
-            <span class="absolute inset-0 scale-75 rounded-xl bg-white/[0.05] opacity-0 transition duration-300 group-hover:scale-100 group-hover:opacity-100"></span>
-            <span class="absolute bottom-1 left-1/2 h-0.5 w-0 -translate-x-1/2 rounded-full bg-violet-400 transition-all duration-300 group-hover:w-1"></span>
-          </a>
-        </div>
-      </div>
-
-      <!-- CTA -->
-      <a href="#contact" data-cursor="button" class="group/cta flex items-center gap-2 rounded-xl border border-white/[0.08] bg-white/[0.04] px-3 py-2 transition duration-500 hover:border-violet-400/30 hover:bg-violet-500/10">
-        <span class="text-[10px] font-medium text-neutral-300 transition duration-300 group-hover/cta:text-white">
-          Let's Talk
-        </span>
-        <span class="flex h-6 w-6 items-center justify-center rounded-lg bg-white/[0.06] text-xs text-neutral-400 transition duration-500 group-hover/cta:rotate-45 group-hover/cta:bg-violet-500/20 group-hover/cta:text-violet-300">
-          ↗
-        </span>
+      <a href="#skills" data-cursor="link" class="nav-link group">
+        <span>Skills</span>
       </a>
 
-      <!-- mobile menu -->
-      <button class="ml-2 flex h-10 w-10 items-center justify-center rounded-xl border border-white/[0.08] bg-white/[0.03] md:hidden" data-cursor="button" aria-label="Open menu">
-        <span class="flex flex-col gap-1.5">
-          <span class="h-px w-4 bg-neutral-400"></span>
-          <span class="h-px w-3 bg-neutral-500"></span>
-          <span class="h-px w-4 bg-neutral-400"></span>
-        </span>
-      </button>
+      <a href="#experience" data-cursor="link" class="nav-link group">
+        <span>Experience</span>
+      </a>
+
+      <a href="#projects" data-cursor="link" class="nav-link group">
+        <span>Projects</span>
+      </a>
+
+      <a href="#contact" data-cursor="link" class="nav-link group">
+        <span>Contact</span>
+      </a>
     </div>
+
+    <!-- CTA island -->
+    <a
+      href="#contact"
+      data-cursor="button"
+      class="group flex h-12 items-center gap-2 rounded-2xl border border-white/[.08] bg-black/60 px-3 shadow-[0_12px_40px_rgba(0,0,0,.35)] backdrop-blur-xl transition duration-500 hover:border-violet-400/30 hover:bg-violet-500/[.06]"
+    >
+      <span
+        class="hidden text-[10px] font-medium text-neutral-400 transition duration-300 group-hover:text-white sm:block"
+      >
+        Let's Talk
+      </span>
+
+      <span
+        class="flex h-8 w-8 items-center justify-center rounded-xl bg-white/[.05] text-xs text-neutral-500 transition duration-500 group-hover:rotate-45 group-hover:bg-violet-500/10 group-hover:text-violet-300"
+      >
+        ↗
+      </span>
+    </a>
+
+    <!-- Mobile menu -->
+    <button
+      type="button"
+      data-cursor="button"
+      aria-label="Open menu"
+      class="flex h-12 w-12 items-center justify-center rounded-2xl border border-white/[.08] bg-black/60 shadow-[0_12px_40px_rgba(0,0,0,.35)] backdrop-blur-xl md:hidden"
+    >
+      <span class="flex flex-col gap-1.5">
+        <span class="h-px w-4 bg-neutral-400"></span>
+        <span class="h-px w-3 bg-neutral-600"></span>
+        <span class="h-px w-4 bg-neutral-400"></span>
+      </span>
+    </button>
   </div>
 </nav>

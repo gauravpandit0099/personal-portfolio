@@ -1,13 +1,13 @@
-/* Skill card entrance animation */
-.skill-card,
-.strength-card {
-  animation: skill-card-in 0.7s ease-out forwards;
+/* Skill entrance */
+.skill-card {
+  opacity: 0;
+  animation: skillIn .5s ease-out forwards;
 }
 
-@keyframes skill-card-in {
+@keyframes skillIn {
   from {
     opacity: 0;
-    transform: translateY(18px);
+    transform: translateY(10px);
   }
 
   to {
@@ -16,11 +16,9 @@
   }
 }
 
-/* Keep animation subtle on mobile */
 @media (prefers-reduced-motion: reduce) {
-  .skill-card,
-  .strength-card {
-    animation: none;
+  .skill-card {
     opacity: 1;
+    animation: none;
   }
 }

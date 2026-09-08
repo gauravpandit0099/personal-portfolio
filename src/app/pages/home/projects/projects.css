@@ -1,0 +1,53 @@
+/* Slider */
+.project-track {
+  --slide-width: calc((100% - 2rem) / 3);
+  transform: translateX(calc(var(--active-index) * -1 * (var(--slide-width) + 1rem)));
+}
+
+/* Card entrance */
+.project-card {
+  animation: projectIn .6s ease both;
+}
+
+@keyframes projectIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Tablet */
+@media (max-width: 1023px) {
+  .project-track {
+    --slide-width: calc((100% - 1rem) / 2);
+  }
+
+  .project-card {
+    width: var(--slide-width);
+    min-width: var(--slide-width);
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .project-track {
+    --slide-width: 100%;
+  }
+
+  .project-card {
+    width: 100%;
+    min-width: 100%;
+  }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .project-card {
+    animation: none;
+  }
+}

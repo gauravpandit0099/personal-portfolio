@@ -1,0 +1,31 @@
+/* Contact details */
+.contact-detail {
+  transition: padding-left .3s ease;
+}
+
+.contact-detail:hover {
+  padding-left: 6px;
+}
+
+/* Heading */
+.contact-heading {
+  animation: contactIn .7s ease both;
+}
+
+@keyframes contactIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .contact-heading {
+    animation: none;
+  }
+}

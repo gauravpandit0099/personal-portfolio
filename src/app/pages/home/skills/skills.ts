@@ -20,6 +20,7 @@ export class Skills {
       items: [
         { name: 'Angular', color: 'bg-violet-500' },
         { name: 'React.js', color: 'bg-cyan-400' },
+        { name: 'React Native', color: 'bg-red-400' },
         { name: 'TypeScript', color: 'bg-blue-400' },
         { name: 'JavaScript', color: 'bg-yellow-400' },
         { name: 'HTML / CSS', color: 'bg-orange-400' },

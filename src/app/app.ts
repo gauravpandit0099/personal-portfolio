@@ -6,7 +6,7 @@ import { Cursor } from './layout/cursor/cursor';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Navbar, Footer, Cursor],
+  imports: [RouterOutlet, Navbar, Cursor],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
