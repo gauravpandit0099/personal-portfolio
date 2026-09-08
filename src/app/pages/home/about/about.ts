@@ -8,42 +8,50 @@ import { Component } from '@angular/core';
   styleUrl: './about.css'
 })
 export class About {
-
-  /* work experience and projects */
+  /* Career summary */
   stats = [
-    { value: '4', label: 'Years Experience' },
-    { value: '10+', label: 'Projects Built' },
-    { value: '100%', label: 'Commitment' }
+    { value: '4+', label: 'Years Experience' },
+    { value: '10+', label: 'Projects Worked On' },
+    { value: 'Full Stack', label: 'Primary Role' }
   ];
 
-  /* technologies */
+  /* Core technologies */
   technologies = [
     { name: 'PHP', color: 'text-blue-400' },
     { name: 'Laravel', color: 'text-red-400' },
     { name: 'Angular', color: 'text-violet-400' },
+    { name: 'React.js', color: 'text-cyan-400' },
     { name: 'MySQL', color: 'text-amber-400' },
+    { name: 'TypeScript', color: 'text-blue-400' },
     { name: 'REST APIs', color: 'text-emerald-400' },
-    { name: 'Microservices', color: 'text-fuchsia-400' },
-    { name: 'TypeScript', color: 'text-cyan-400' },
-    { name: 'Tailwind', color: 'text-teal-400' },
+    { name: 'React Native', color: 'text-cyan-300' }
   ];
 
-  /* quality section */
-  qualities = [
+  /* What I work on */
+  capabilities = [
     {
       number: '01',
-      title: 'Clean Architecture',
-      description: 'Building maintainable applications with structure that scales.'
+      title: 'Frontend Development',
+      description:
+        'Building responsive web interfaces and reusable components using Angular, React.js, TypeScript and JavaScript.'
     },
     {
       number: '02',
-      title: 'User Focused',
-      description: 'Turning complex requirements into simple digital experiences.'
+      title: 'Backend Development',
+      description:
+        'Developing Laravel applications, REST APIs, authentication, business logic and database-driven systems.'
     },
     {
       number: '03',
-      title: 'Always Learning',
-      description: 'Constantly exploring better tools, patterns and technologies.'
+      title: 'Enterprise Systems',
+      description:
+        'Working on role-based applications, configurable workflows, multi-module platforms and business processes.'
+    },
+    {
+      number: '04',
+      title: 'Integration & Performance',
+      description:
+        'Integrating third-party APIs, payment services and background jobs while improving database and application performance.'
     }
   ];
 }
