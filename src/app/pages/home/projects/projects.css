@@ -1,9 +1,10 @@
 /* Slider */
 .project-track {
-  width: 100%;
+  --slide-width: calc((100% - 2rem) / 3);
+  transform: translateX(calc(var(--active-index) * -1 * (var(--slide-width) + 1rem)));
 }
 
-/* Card animation */
+/* Card entrance */
 .project-card {
   animation: projectIn .6s ease both;
 }
@@ -20,15 +21,24 @@
   }
 }
 
-/* Responsive slider width */
+/* Tablet */
 @media (max-width: 1023px) {
+  .project-track {
+    --slide-width: calc((100% - 1rem) / 2);
+  }
+
   .project-card {
-    width: calc(50% - 8px);
-    min-width: calc(50% - 8px);
+    width: var(--slide-width);
+    min-width: var(--slide-width);
   }
 }
 
+/* Mobile */
 @media (max-width: 767px) {
+  .project-track {
+    --slide-width: 100%;
+  }
+
   .project-card {
     width: 100%;
     min-width: 100%;
