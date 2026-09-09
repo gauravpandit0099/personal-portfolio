@@ -51,7 +51,7 @@ export class Services {
     },
     {
       number: '06',
-      title: 'Mobile Application Development',
+      title: 'Mobile Application',
       description:
         'Developing cross-platform mobile applications with React Native, reusable interfaces, API integration and notification-based workflows.',
       tags: ['React Native', 'iOS', 'Android'],

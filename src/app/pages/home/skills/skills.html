@@ -1,5 +1,5 @@
 <!-- Skills section -->
-<section id="skills" class="relative overflow-hidden bg-black px-6 pt-10 pb-6 lg:px-10 lg:pt-14 lg:pb-8">
+<section id="skills" class="relative overflow-hidden bg-black px-4 pt-10 pb-6 sm:px-6 lg:px-10 lg:pt-14 lg:pb-8">
   <div class="mx-auto max-w-7xl">
     <!-- Heading -->
     <div class="mb-8 flex flex-col justify-between gap-5 lg:flex-row lg:items-end">
@@ -29,12 +29,12 @@
     <div class="grid gap-3 lg:grid-cols-2">
       @for (group of skillGroups; track group.number; let i = $index) {
         <article
-          class="skill-card group relative overflow-hidden rounded-2xl border border-white/[.07] bg-white/[.015] p-5 transition duration-500 hover:-translate-y-1 hover:border-white/[.14] hover:bg-white/[.025]"
+          class="skill-card group relative flex min-w-0 flex-col overflow-hidden rounded-2xl border border-white/[.07] bg-white/[.015] p-4 transition duration-500 hover:border-white/[.14] hover:border-white/[.14] hover:bg-white/[.025] sm:p-5"
           [style.animation-delay]="i * 80 + 'ms'"
         >
-          <div class="flex items-start justify-between gap-5">
+          <div class="flex min-w-0 items-start justify-between gap-3 sm:gap-5">
             <!-- Icon + title -->
-            <div class="flex items-center gap-3">
+            <div class="flex min-w-0 items-start gap-3">
               <div
                 class="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border font-mono text-xs transition duration-500 group-hover:scale-105"
                 [class]="group.iconClass"
@@ -42,12 +42,12 @@
                 {{ group.icon }}
               </div>
 
-              <div>
-                <h3 class="text-sm font-medium text-white md:text-base">
+              <div class="min-w-0">
+                <h3 class="break-words text-sm font-medium leading-5 text-white sm:text-base">
                   {{ group.title }}
                 </h3>
 
-                <p class="mt-1 text-[10px] leading-4 text-neutral-600">
+                <p class="mt-1 break-words text-[10px] leading-4 text-neutral-600">
                   {{ group.description }}
                 </p>
               </div>
@@ -61,10 +61,10 @@
           </div>
 
           <!-- Technologies -->
-          <div class="mt-5 flex flex-wrap gap-1.5">
+          <div class="mt-5 flex min-w-0 flex-wrap gap-1.5">
             @for (item of group.items; track item.name) {
               <span
-                class="inline-flex items-center gap-1.5 rounded-full border border-white/[.07] bg-black/30 px-2.5 py-1.5 text-[9px] text-neutral-400 transition duration-300 hover:-translate-y-0.5 hover:border-white/[.15] hover:text-white"
+                class="inline-flex max-w-full items-center gap-1.5 rounded-full border border-white/[.07] bg-black/30 px-2 py-1.5 text-[9px] text-neutral-400 transition duration-300 hover:-translate-y-0.5 hover:border-white/[.15] hover:text-white sm:px-2.5"
               >
                 <span class="h-1.5 w-1.5 rounded-full" [class]="item.color"></span>
 
