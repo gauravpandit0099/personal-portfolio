@@ -64,11 +64,12 @@
       </span>
     </a>
 
-    <!-- Mobile menu -->
+    <!-- mobile menu -->
     <button
       type="button"
       data-cursor="button"
-      aria-label="Open menu"
+      [attr.aria-label]="menuOpen ? 'Close menu' : 'Open menu'"
+      (click)="toggleMenu()"
       class="flex h-12 w-12 items-center justify-center rounded-2xl border border-white/[.08] bg-black/60 shadow-[0_12px_40px_rgba(0,0,0,.35)] backdrop-blur-xl md:hidden"
     >
       <span class="flex flex-col gap-1.5">
@@ -78,4 +79,55 @@
       </span>
     </button>
   </div>
+
+  @if (menuOpen) {
+    <div
+      class="absolute right-0 top-14 w-52 rounded-2xl border border-white/[.08] bg-black/90 p-2 shadow-[0_20px_50px_rgba(0,0,0,.5)] backdrop-blur-xl md:hidden"
+    >
+      <a
+        href="#about"
+        data-cursor="link"
+        (click)="closeMenu()"
+        class="block rounded-xl px-4 py-3 text-xs text-neutral-400 transition hover:bg-white/[.04] hover:text-white"
+      >
+        About
+      </a>
+
+      <a
+        href="#skills"
+        data-cursor="link"
+        (click)="closeMenu()"
+        class="block rounded-xl px-4 py-3 text-xs text-neutral-400 transition hover:bg-white/[.04] hover:text-white"
+      >
+        Skills
+      </a>
+
+      <a
+        href="#experience"
+        data-cursor="link"
+        (click)="closeMenu()"
+        class="block rounded-xl px-4 py-3 text-xs text-neutral-400 transition hover:bg-white/[.04] hover:text-white"
+      >
+        Experience
+      </a>
+
+      <a
+        href="#projects"
+        data-cursor="link"
+        (click)="closeMenu()"
+        class="block rounded-xl px-4 py-3 text-xs text-neutral-400 transition hover:bg-white/[.04] hover:text-white"
+      >
+        Projects
+      </a>
+
+      <a
+        href="#contact"
+        data-cursor="link"
+        (click)="closeMenu()"
+        class="block rounded-xl px-4 py-3 text-xs text-neutral-400 transition hover:bg-white/[.04] hover:text-white"
+      >
+        Contact
+      </a>
+    </div>
+  }
 </nav>
