@@ -62,11 +62,11 @@
   }
 }
 @keyframes cardFloat {
-  0%,100% {
-    transform: translate(-50%,-50%) rotate(-8deg);
+  0%, 100% {
+    transform: translate(-50%, -50%) rotate(-5deg);
   }
   50% {
-    transform: translate(-50%,-55%) rotate(3deg);
+    transform: translate(-50%, calc(-50% - 8px)) rotate(0deg);
   }
 }
 @keyframes ringRotate {
@@ -85,5 +85,40 @@
   .hero-card,
   .hero-ring {
     animation: none;
+  }
+}
+
+/* mobile layout */
+@media (max-width: 639px) {
+  .hero-visual {
+    animation-delay: .05s;
+  }
+
+  .hero-card {
+    animation-duration: 6s;
+  }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .hero-content,
+  .hero-visual,
+  .hero-gradient,
+  .hero-orb,
+  .hero-card,
+  .hero-ring {
+    animation: none;
+  }
+}
+
+/* mobile: shorter float distance so the card never nudges outside its box */
+@media (max-width: 639px) {
+  @keyframes cardFloat {
+    0%, 100% {
+      transform: translate(-50%, -50%) rotate(-5deg);
+    }
+    50% {
+      transform: translate(-50%, calc(-50% - 4px)) rotate(0deg);
+    }
   }
 }
