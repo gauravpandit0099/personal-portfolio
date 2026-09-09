@@ -27,7 +27,7 @@ export class Services {
     },
     {
       number: '03',
-      title: 'Dynamic & Low-Code Systems',
+      title: 'Low-Code Systems',
       description:
         'Creating configurable systems where administrators can manage forms, fields, validations, workflows and layouts without changing application code.',
       tags: ['Dynamic Forms', 'Workflows', 'RBAC'],
